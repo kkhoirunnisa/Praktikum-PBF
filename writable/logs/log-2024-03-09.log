@@ -1,0 +1,87 @@
+CRITICAL - 2024-03-09 07:50:28 --> ParseError: syntax error, unexpected token "}", expecting ";"
+in APPPATH\Controllers\Home.php on line 10.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\MATERI KULIAH\\SEMESTER 4\\PBF\\codeigniter4-framework-7d393f8\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 07:53:15 --> ParseError: syntax error, unexpected token "}", expecting ";"
+in APPPATH\Controllers\Home.php on line 10.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\MATERI KULIAH\\SEMESTER 4\\PBF\\codeigniter4-framework-7d393f8\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 07:54:42 --> ParseError: syntax error, unexpected token "}", expecting ";"
+in APPPATH\Controllers\Home.php on line 10.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\MATERI KULIAH\\SEMESTER 4\\PBF\\codeigniter4-framework-7d393f8\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 09:02:47 --> Error: Class "app\Controllers\BaseController" not found
+in APPPATH\Controllers\Pages.php on line 7.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\MATERI KULIAH\\SEMESTER 4\\PBF\\codeigniter4-framework-7d393f8\\app\\Controllers\\Pages.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Pages')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Pages')
+ 5 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Pages', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\MATERI KULIAH\\SEMESTER 4\\PBF\\codeigniter4-framework-7d393f8\\public\\index.php')
+ERROR - 2024-03-09 13:27:58 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in D:\MATERI KULIAH\SEMESTER 4\PBF\codeigniter4-framework-7d393f8\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\MATERI KULIAH\SEMESTER 4\PBF\codeigniter4-framework-7d393f8\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', 'root', 'ci4tutorial', 3306, '', 0)
+#1 D:\MATERI KULIAH\SEMESTER 4\PBF\codeigniter4-framework-7d393f8\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\MATERI KULIAH\SEMESTER 4\PBF\codeigniter4-framework-7d393f8\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\MATERI KULIAH\SEMESTER 4\PBF\codeigniter4-framework-7d393f8\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\MATERI KULIAH\SEMESTER 4\PBF\codeigniter4-framework-7d393f8\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\MATERI KULIAH\SEMESTER 4\PBF\codeigniter4-framework-7d393f8\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\MATERI KULIAH\SEMESTER 4\PBF\codeigniter4-framework-7d393f8\app\Models\NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#7 D:\MATERI KULIAH\SEMESTER 4\PBF\codeigniter4-framework-7d393f8\app\Controllers\News.php(15): App\Models\NewsModel->getNews()
+#8 D:\MATERI KULIAH\SEMESTER 4\PBF\codeigniter4-framework-7d393f8\system\CodeIgniter.php(941): App\Controllers\News->index()
+#9 D:\MATERI KULIAH\SEMESTER 4\PBF\codeigniter4-framework-7d393f8\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 D:\MATERI KULIAH\SEMESTER 4\PBF\codeigniter4-framework-7d393f8\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\MATERI KULIAH\SEMESTER 4\PBF\codeigniter4-framework-7d393f8\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\MATERI KULIAH\SEMESTER 4\PBF\codeigniter4-framework-7d393f8\system\Commands\Server\rewrite.php(47): require_once('D:\\MATERI KULIA...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in D:\MATERI KULIAH\SEMESTER 4\PBF\codeigniter4-framework-7d393f8\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\MATERI KULIAH\SEMESTER 4\PBF\codeigniter4-framework-7d393f8\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\MATERI KULIAH\SEMESTER 4\PBF\codeigniter4-framework-7d393f8\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\MATERI KULIAH\SEMESTER 4\PBF\codeigniter4-framework-7d393f8\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\MATERI KULIAH\SEMESTER 4\PBF\codeigniter4-framework-7d393f8\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\MATERI KULIAH\SEMESTER 4\PBF\codeigniter4-framework-7d393f8\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\MATERI KULIAH\SEMESTER 4\PBF\codeigniter4-framework-7d393f8\app\Models\NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#6 D:\MATERI KULIAH\SEMESTER 4\PBF\codeigniter4-framework-7d393f8\app\Controllers\News.php(15): App\Models\NewsModel->getNews()
+#7 D:\MATERI KULIAH\SEMESTER 4\PBF\codeigniter4-framework-7d393f8\system\CodeIgniter.php(941): App\Controllers\News->index()
+#8 D:\MATERI KULIAH\SEMESTER 4\PBF\codeigniter4-framework-7d393f8\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#9 D:\MATERI KULIAH\SEMESTER 4\PBF\codeigniter4-framework-7d393f8\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\MATERI KULIAH\SEMESTER 4\PBF\codeigniter4-framework-7d393f8\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\MATERI KULIAH\SEMESTER 4\PBF\codeigniter4-framework-7d393f8\system\Commands\Server\rewrite.php(47): require_once('D:\\MATERI KULIA...')
+#12 {main}
+CRITICAL - 2024-03-09 13:27:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `news`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\News.php(15): App\Models\NewsModel->getNews()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\News->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\MATERI KULIAH\\SEMESTER 4\\PBF\\codeigniter4-framework-7d393f8\\public\\index.php')
+INFO - 2024-03-09 13:49:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-09 13:53:26 --> CSRF token verified.
